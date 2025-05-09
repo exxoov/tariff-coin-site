@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TariffCoin – Crypto for Good</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Hero background image with dark fallback */
+    .hero-bg {
+      background-color: #1a202c; /* gray-900 */
+      background: url('na_stronę_background.png') center/cover no-repeat;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+  <!-- Header -->
+  <header class="container mx-auto flex items-center justify-between py-6">
+    <div class="flex items-center">
+      <span class="text-3xl font-extrabold text-yellow-400">TariffCoin</span>
+    </div>
+    <nav>
+      <ul class="flex space-x-6 text-gray-300">
+        <li><a href="#home" class="hover:text-purple-400">Home</a></li>
+        <li><a href="#features" class="hover:text-purple-400">Features</a></li>
+        <li><a href="#team" class="hover:text-purple-400">Team</a></li>
+        <li><a href="#about" class="hover:text-purple-400">About</a></li>
+        <li><a href="#contact" class="hover:text-purple-400">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Hero Section -->
+  <section id="home" class="hero-bg min-h-screen flex flex-col items-center justify-start pt-32">
+    <div class="text-center px-4 max-w-2xl">
+      <h1 class="text-5xl font-extrabold mb-4">Crypto with a Conscience</h1>
+      <p class="text-xl mb-8">2.5% of every transaction goes to families hit by unfair tariffs.</p>
+      <a href="#features" class="px-8 py-4 bg-purple-600 rounded-lg font-semibold hover:bg-purple-500 mb-12 inline-block">Learn More</a>
+      <div class="w-full h-96 bg-gray-700 rounded-lg flex items-center justify-center mb-16">
+        <span class="text-gray-400">Main video coming soon...</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="container mx-auto py-8">
+    <h2 class="text-4xl font-bold mb-8">Key Features</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="bg-gray-800 p-6 rounded-lg text-center">
+        <h3 class="text-2xl font-semibold mb-2">2.5% Charity Fee</h3>
+        <p>Transparent donations to families affected by tariffs.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg text-center">
+        <h3 class="text-2xl font-semibold mb-2">Built on Solana</h3>
+        <p>Fast, low-cost transactions secured by Solana.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg text-center">
+        <h3 class="text-2xl font-semibold mb-2">Token Standard 2022</h3>
+        <p>Modern token specification for compatibility.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg text-center">
+        <h3 class="text-2xl font-semibold mb-2">Fully Transparent</h3>
+        <p>Track every donation on-chain via a public wallet.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="bg-gray-800 py-16">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-bold mb-4">About TariffCoin</h2>
+      <p class="text-lg leading-relaxed">TariffCoin is a Solana-based cryptocurrency designed to support small businesses and families hit by unfair trade tariffs. Our goal is to combine blockchain technology with real-world impact, ensuring every transaction helps those in need.</p>
+      <!-- Token Address Section -->
+      <div class="bg-gray-700 p-8 mt-6 rounded-lg">
+        <h3 class="text-2xl font-semibold mb-4">Token Address</h3>
+        <div class="bg-gray-800 p-4 rounded flex items-center">
+          <span class="text-yellow-400 font-mono break-all">2uaw9D7BK5FsA3LHMujc8yZBbxw4VVDr69JVooxjy9Gs</span>
+          <button onclick="navigator.clipboard.writeText('2uaw9D7BK5FsA3LHMujc8yZBbxw4VVDr69JVooxjy9Gs')" class="ml-2 p-2 bg-purple-600 rounded hover:bg-purple-500">
+            Copy
+          </button>
+        </div>
+        <p class="mt-4 text-sm text-gray-400">Built on Solana blockchain using modern Token-2022 standard with 2.8% transfer fee mechanism.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="container mx-auto py-12">
+    <h2 class="text-4xl font-bold mb-4">Our Team</h2>
+    <p class="text-lg mb-8">Watch the video below to learn about our team!</p>
+    <div class="w-full h-64 bg-gray-700 rounded-lg flex items-center justify-center mb-16">
+      <span class="text-gray-400">Team video coming soon...</span>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container mx-auto py-12">
+    <h2 class="text-4xl font-bold mb-8">Contact Us</h2>
+    <form action="mailto:jedrek.kwiecien@gmail.com" method="POST" enctype="text/plain" class="grid gap-6 max-w-lg">
+      <input type="text" name="name" placeholder="Your Name" required class="p-4 bg-gray-700 rounded-lg" />
+      <input type="email" name="email" placeholder="Your Email" required class="p-4 bg-gray-700 rounded-lg" />
+      <textarea name="message" placeholder="Message" rows="4" required class="p-4 bg-gray-700 rounded-lg"></textarea>
+      <button type="submit" class="px-6 py-3 bg-purple-600 rounded-lg font-semibold hover:bg-purple-500">Send Message</button>
+    </form>
+    <p class="mt-4 text-gray-400 text-sm">Your message will be delivered to <a href="mailto:jedrek.kwiecien@gmail.com" class="text-purple-400">jedrek.kwiecien@gmail.com</a>.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 py-8">
+    <div class="container mx-auto text-center text-gray-500">
+      <p>&copy; 2025 TariffCoin. All rights reserved.</p>
+      <div class="mt-4 flex justify-center space-x-4">
+        <a href="#" class="hover:text-purple-400">Privacy Policy</a>
+        <a href="#" class="hover:text-purple-400">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
