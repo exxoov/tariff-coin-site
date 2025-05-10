@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TariffCoin – Crypto for Good</title>
-    <!-- favicons -->
+  <!-- favicons -->
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -12,16 +12,14 @@
     /* Hero background image with dark fallback */
     .hero-bg {
       background-color: #1a202c; /* gray-900 */
-      background: url('na_stronę_background.png') center/cover no-repeat;
+      background: url('assets/na_stronę_background.png') center/cover no-repeat;
     }
   </style>
 </head>
 <body class="bg-gray-900 text-white font-sans">
   <!-- Header -->
   <header class="container mx-auto flex items-center justify-between py-6">
-    <div class="flex items-center">
-      <span class="text-3xl font-extrabold text-yellow-400">TariffCoin</span>
-    </div>
+    <span class="text-3xl font-extrabold text-yellow-400">TariffCoin</span>
     <nav>
       <ul class="flex space-x-6 text-gray-300">
         <li><a href="#home" class="hover:text-purple-400">Home</a></li>
@@ -32,19 +30,20 @@
       </ul>
     </nav>
   </header>
-  
+
   <!-- Hero Section -->
   <section id="home" class="hero-bg min-h-screen flex flex-col items-center justify-start pt-32">
-    <div class="text-center px-4 max-w-2xl">
+    <div class="text-center px-4 max-w-4xl">
       <h1 class="text-5xl font-extrabold mb-4">Crypto with a Conscience</h1>
       <p class="text-xl mb-8">2.5% of every transaction goes to families hit by unfair tariffs.</p>
       <a href="#features" class="px-8 py-4 bg-purple-600 rounded-lg font-semibold hover:bg-purple-500 mb-12 inline-block">Learn More</a>
-      <div class="w-full h-[800px] bg-black rounded-lg overflow-hidden mb-16">
+      <!-- Enlarged main video -->
+      <div class="w-full h-[600px] md:h-[800px] bg-black rounded-lg overflow-hidden mb-16">
         <video controls class="w-full h-full object-cover">
-        <source src="assets/main-video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+          <source src="assets/main-video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
         </video>
-          </div>
+      </div>
     </div>
   </section>
 
@@ -94,11 +93,12 @@
   <section id="team" class="container mx-auto py-12">
     <h2 class="text-4xl font-bold mb-4">Our Team</h2>
     <p class="text-lg mb-8">Watch the video below to learn about our team!</p>
-    <div class="w-full h-[400px] bg-black rounded-lg overflow-hidden mb-16">
-  <video controls class="w-full h-full object-cover">
-    <source src="assets/team-video.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-    </video>
+    <!-- Smaller vertical team video -->
+    <div class="w-1/2 mx-auto h-[300px] bg-black rounded-lg overflow-hidden mb-16">
+      <video controls class="w-full h-full object-cover">
+        <source src="assets/team-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </div>
   </section>
 
